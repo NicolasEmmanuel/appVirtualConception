@@ -7,10 +7,11 @@
     <h3 class="first-h1">Accueil > Formation > Nos formations en digital</h3>
 
     <div class="User-description">
+@for ($formations)
 
       <div class="User-text">
-        <h1>{{ $formation->nom }}</h1>
-        <h3>{{ $formation->description }}</h3>
+        <h1>{{ $formations->nom }}</h1>
+        <h3>{{ $formations->description }}</h3>
       </div>
 
       <div class="User-image">
@@ -37,68 +38,68 @@
               <div class="title">
               Présentation du métier
               </div>
-              <div class="item-description">{{ $formation->presentation_du_metier }}</div>
+              <div class="item-description">{{ $formations->presentation_du_metier }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Objectifs de la formation
               </div>
-              <div class="item-description">{{ $formation->objectifs_de_la_formation }}</div>
+              <div class="item-description">{{ $formations->objectifs_de_la_formation }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Pré-Requis
               </div>
-              <div class="item-description">{{ $formation->prerequis }}</div>
+              <div class="item-description">{{ $formations->prerequis }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Aptitudes
               </div>
-              <div class="item-description">{{ $formation->aptitudes }}</div>
+              <div class="item-description">{{ $formations->aptitudes }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Programme de formation
               </div>
-              <div class="item-description">{{ $formation->programme }}</div>
+              <div class="item-description">{{ $formations->programme }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Certification
               </div>
-              <div class="item-description">{{ $formation->certification }}</div>
+              <div class="item-description">{{ $formations->certification }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Débouchés
               </div>
-              <div class="item-description">{{ $formation->debouches }}</div>
+              <div class="item-description">{{ $formations->debouches }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Passerelles
               </div>
-              <div class="item-description">{{ $formation->passerelles }}</div>
+              <div class="item-description">{{ $formations->passerelles }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Equivalences
               </div>
-              <div class="item-description">{{ $formation->equivalences }}</div>
+              <div class="item-description">{{ $formations->equivalences }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Suite de parcours possibles
               </div>
-              <div class="item-description">{{ $formation->suite_de_parcours_possibles }}</div>
+              <div class="item-description">{{ $formations->suite_de_parcours_possibles }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Périodes de la formation
               </div>
-              <div class="item-description">{{ $formation->date_debut }}</div>
-              <div class="item-description">{{ $formation->date_fin }}</div>
+              <div class="item-description">{{ $formations->date_debut }}</div>
+              <div class="item-description">{{ $formations->date_fin }}</div>
             </li>
             
           </ul>
@@ -149,7 +150,7 @@
 
               <div class="info-text">
                 <h2>Durée</h2>
-                <h3>{{ $formation->duree }}</h3>
+                <h3>{{ $formations->duree }}</h3>
               </div>
             </li>
             <li>
@@ -159,7 +160,7 @@
               </svg> 
               <div class="info-text">
                 <h2>Lieu</h2>
-                <h3>{{ $formation->lieux }}</h3>
+                <h3>{{ $formations->lieux }}</h3>
               </div>
             </li>
             <li>
@@ -169,7 +170,7 @@
               </svg> 
               <div class="info-text">
                 <h2>Certification</h2>
-                <h3>{{ $formation->certification }} </h3>
+                <h3>{{ $formations->certification }} </h3>
               </div>
             </li>
           </ul>
@@ -181,5 +182,7 @@
 
   </div>
 </section>
+
+@endfor
 
 @endsection
