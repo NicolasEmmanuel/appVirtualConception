@@ -9,8 +9,8 @@
     <div class="User-description">
 
       <div class="User-text">
-        <h1>Lorem, ipsum dolor sit.</h1>
-        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora, non officiis autem quas eaque rem mollitia qui inventore atque unde ad sint! Eaque maiores, consectetur eum consequuntur atque fugiat.</h3>
+        <h1>{{ $formation->nom }}</h1>
+        <h3>{{ $formation->description }}</h3>
       </div>
 
       <div class="User-image">
@@ -32,28 +32,76 @@
         <div class="rb-container">
 
           <ul class="rb">
+            
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
-                3rd May 2020 7:00 PM
+              Présentation du métier
               </div>
-              <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi, ea itaque laboriosam saepe ipsum tenetur reiciendis natus quia sint vitae dignissimos quod esse consequuntur sed sapiente repellat similique consequatur?</div>
-    
+              <div class="item-description">{{ $formation->presentation_du_metier }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
-                3rd May 2020 7:00 PM
+              Objectifs de la formation
               </div>
-              <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi, ea itaque laboriosam saepe ipsum tenetur reiciendis natus quia sint vitae dignissimos quod esse consequuntur sed sapiente repellat similique consequatur?</div>
-    
+              <div class="item-description">{{ $formation->objectifs_de_la_formation }}</div>
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
-                3rd May 2020 7:00 PM
+              Pré-Requis
               </div>
-              <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi, ea itaque laboriosam saepe ipsum tenetur reiciendis natus quia sint vitae dignissimos quod esse consequuntur sed sapiente repellat similique consequatur?</div>
-    
+              <div class="item-description">{{ $formation->prerequis }}</div>
             </li>
-            </ul>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Aptitudes
+              </div>
+              <div class="item-description">{{ $formation->aptitudes }}</div>
+            </li>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Programme de formation
+              </div>
+              <div class="item-description">{{ $formation->programme }}</div>
+            </li>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Certification
+              </div>
+              <div class="item-description">{{ $formation->certification }}</div>
+            </li>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Débouchés
+              </div>
+              <div class="item-description">{{ $formation->debouches }}</div>
+            </li>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Passerelles
+              </div>
+              <div class="item-description">{{ $formation->passerelles }}</div>
+            </li>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Equivalences
+              </div>
+              <div class="item-description">{{ $formation->equivalences }}</div>
+            </li>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Suite de parcours possibles
+              </div>
+              <div class="item-description">{{ $formation->suite_de_parcours_possibles }}</div>
+            </li>
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              Périodes de la formation
+              </div>
+              <div class="item-description">{{ $formation->date_debut }}</div>
+              <div class="item-description">{{ $formation->date_fin }}</div>
+            </li>
+            
+          </ul>
             </div>
       <!-- <div class="leftbox">
 
@@ -101,7 +149,7 @@
 
               <div class="info-text">
                 <h2>Durée</h2>
-                <h3>description blabla 200h</h3>
+                <h3>{{ $formation->duree }}</h3>
               </div>
             </li>
             <li>
@@ -111,7 +159,7 @@
               </svg> 
               <div class="info-text">
                 <h2>Lieu</h2>
-                <h3>Fort-de-France</h3>
+                <h3>{{ $formation->lieux }}</h3>
               </div>
             </li>
             <li>
@@ -121,7 +169,7 @@
               </svg> 
               <div class="info-text">
                 <h2>Certification</h2>
-                <h3>Niveau 7 </h3>
+                <h3>{{ $formation->certification }} </h3>
               </div>
             </li>
           </ul>
