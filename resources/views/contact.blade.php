@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
+
 <main class="min-h-screen bg-black text-white flex items-center justify-center" x-data="carouselFilter()">
     <div class="container grid grid-cols-1">
       <div class="flex py-12 justify-center">
@@ -163,3 +164,9 @@
       
     </div>
   </main>
+
+  <hr>
+
+  <div class="imfpa">
+    test
+  </div>
