@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LayoutController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FormateursController;
 
 /*
@@ -34,6 +35,9 @@ Route::get('/blog',[LayoutController::class, 'blog'])->name('blog');
 Route::get('/formateur', [FormateursController::class, 'index'])->name('formateurs');
 Route::get('/formateur/{id}', [FormateursController::class, 'detail'])->name('formateur-detail');
 
+/*Route contact*/ 
+Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
+/*Fin route contact*/ 
 
 Route::get('/dashboard', function () {
     return view('dashboard');
