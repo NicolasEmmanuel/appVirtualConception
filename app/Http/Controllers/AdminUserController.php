@@ -11,8 +11,6 @@ class AdminUserController extends Controller
         return view('admin.user-list');
     }
 
-
-
     public function edit(){
         return view('admin.user-edit');
     }

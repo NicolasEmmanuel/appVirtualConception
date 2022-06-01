@@ -9,11 +9,10 @@ Route::middleware('auth')->group(function () {
 
     Route::get('admin/user', [AdminUserController::class, 'list'])
                 ->name('user.list');
+
     Route::get('admin/user/edit', [AdminUserController::class, 'edit'])
                 ->name('user.edit');
-  
-
- 
+   
 });
 
 

@@ -3,7 +3,7 @@
 
 
 
-<h1>Page de Renaud, Editer les utilisateur</h1>
+<h1>Veronique et Stephen</h1>
 
 
 

@@ -3,14 +3,7 @@
 
 
 
-
-
-
 <h1>Salut MasterGuGu</h1>
-
-
-
-
 
 
 
