@@ -8,11 +8,11 @@
 </p>
 
 ## About appVirtual
-1-recuperer fichier.
-2-Si vous n'avez pas encore creer votre branche de travail, creez la a partir de "branche-principale".
-3-faire composer install pour recuperer les fichier non-git.
-4-recreer base de donnée "appvirtual" la base .
-5-faire "php artisan migrate".
+## 1-recuperer fichier.
+## 2-Si vous n'avez pas encore creer votre branche de travail, creez la a partir de "branche-principale".
+## 3-faire composer install pour recuperer les fichier non-git.
+## 4-recreer base de donnée "appvirtual" la base .
+## 5-faire "php artisan migrate".
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
