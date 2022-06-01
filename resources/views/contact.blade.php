@@ -165,8 +165,4 @@
     </div>
   </main>
 
-  <hr>
-
-  <div class="imfpa">
-    test
-  </div>
+  @endsection
