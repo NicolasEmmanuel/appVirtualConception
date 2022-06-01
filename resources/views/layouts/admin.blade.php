@@ -10,6 +10,7 @@
 
     <!-- **********Boxicons CSS ************** -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
 
 
     <title>Dasboard Sidebar Menu  Dark-Light Mode</title>
@@ -66,7 +67,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="{{ route('user.list') }}">
                             <i class="bx bx-heart icon" ></i>
                             <span class="text nav-text">Utilisateurs</span>
                         </a>
@@ -111,7 +112,7 @@
         @yield('content')
     </section>
 
-    <script src="js/admin.js"></script>
+    <script src="/js/admin.js"></script>
 
 </body>
 
