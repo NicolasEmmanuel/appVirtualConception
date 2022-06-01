@@ -42,124 +42,21 @@
           <ul class="rb">
 
           @foreach ($formations->detail_formation as $detail)
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              {{ $detail->titre }}
-              </div>
-          <!-- forelse ($formations->detail_formation as $detail) -->
-              <div class="item-description">{{ $detail->description }}</div>
-            </li>
-          <!-- empty
-
-          endforelse   -->
-          @endforeach
-
-
-            <!-- <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Présentation du métier
-              </div>
-              <div class="item-description">{{ $formations->presentation_du_metier }}</div>
-            </li>
+              @if (! is_null($detail->description))
+              <li class="rb-item" ng-repeat="itembx">
+                <div class="title">
+                {{ $detail->titre }}
+                </div>
             
+                <div class="item-description">{{ $detail->description }}</div>
+              </li>              
+            @else
 
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Objectifs de la formation
-              </div>
-              <div class="item-description">{{ $formations->objectifs_de_la_formation }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Pré-Requis
-              </div>
-              <div class="item-description">{{ $formations->prerequis }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Aptitudes
-              </div>
-              <div class="item-description">{{ $formations->aptitudes }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Programme de formation
-              </div>
-              <div class="item-description">{{ $formations->programme }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Certification
-              </div>
-              <div class="item-description">{{ $formations->certification }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Débouchés
-              </div>
-              <div class="item-description">{{ $formations->debouches }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Passerelles
-              </div>
-              <div class="item-description">{{ $formations->passerelles }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Équivalences
-              </div>
-              <div class="item-description">{{ $formations->equivalences }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Suite de parcours possibles
-              </div>
-              <div class="item-description">{{ $formations->suite_de_parcours_possibles }}</div>
-            </li>
-            <li class="rb-item" ng-repeat="itembx">
-              <div class="title">
-              Périodes de la formation
-              </div>
-              <div class="item-description">{{ $formations->date_debut }}</div>
-              <div class="item-description">{{ $formations->date_fin }}</div>
-            </li> -->
+            @endif ($formations->detail_formation as $detail)
+          @endforeach
             
           </ul>
             </div>
-      <!-- <div class="leftbox">
-
-          <div class="rb-container">
-
-            <ul class="rb">
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="title">
-                  3rd May 2020 7:00 PM
-                </div>
-                <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi, ea itaque laboriosam saepe ipsum tenetur reiciendis natus quia sint vitae dignissimos quod esse consequuntur sed sapiente repellat similique consequatur?</div>
-      
-              </li>
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="title">
-                  19th May 2020 3:00 PM
-                </div>
-                <div class="item-description">Mia Redwood commented on your last post.</div>
-      
-              </li>
-      
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="title">
-                  17st June 2020 7:00 PM
-                </div>
-                <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, odio numquam ratione sint itaque beatae dolores rerum, architecto commodi pariatur dolorem ipsa ducimus ex quasi fugit atque. Ab, obcaecati maiores!</div>
-      
-              </li>
-      
-            </ul>
-      
-          </div>
-      </div> 
--->
       </div>
       
       <div class="right">
