@@ -17,6 +17,6 @@ class FormateursController extends Controller
     public function detail($id){
 
         $detailFormateur=User::FindOrFail($id);
-        return view('detail', compact('detailFormateur'));
+        return view('formateur-detail', compact('detailFormateur'));
     }
 }

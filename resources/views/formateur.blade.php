@@ -20,7 +20,7 @@
             
               <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="{{$item->photo}}" alt="">
               
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white"><a href="detail/{{$item->id}}">{{$item->name}}</a></h1>
+              <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white"><a href="/formateur/{{$item->id}}">{{$item->name}}</a></h1>
               
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">{{$item->role}}</p>
               
