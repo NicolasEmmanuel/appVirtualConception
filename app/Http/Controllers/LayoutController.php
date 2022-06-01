@@ -10,18 +10,20 @@ class LayoutController extends Controller
 {
     public function index(){
 
-        $formations = Formation::all() ;
-        return view('index', compact('formations')) ;
+        return view('index') ;
     }
 
     public function formation(){
 
-        return view('formation');
+        $formations = Formation::all() ;
+        return view('formation', compact('formations'));
     }
 
-    public function formation_detail(){
+    public function formation_detail($nom){
 
-        return view('formation-detail');
+        $details = Formation::where('nom', '=', $nom) ;
+        $formations = Formation::first() ;
+        return view('formation-detail', compact('details','formations')) ;
     }
 
     public function blog(){

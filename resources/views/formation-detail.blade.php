@@ -1,13 +1,20 @@
-
 @extends('layouts.app')
 @section('content')
+
+
+
+<?php
+// dd($formations->detail_formation);
+?>
+
+
+
 <section class="formation">
   <div class="container">
     
     <h3 class="first-h1">Accueil > Formation > Nos formations en digital</h3>
 
     <div class="User-description">
-@for ($formations)
 
       <div class="User-text">
         <h1>{{ $formations->nom }}</h1>
@@ -33,13 +40,29 @@
         <div class="rb-container">
 
           <ul class="rb">
-            
+
+          @foreach ($formations->detail_formation as $detail)
             <li class="rb-item" ng-repeat="itembx">
+              <div class="title">
+              {{ $detail->titre }}
+              </div>
+          <!-- forelse ($formations->detail_formation as $detail) -->
+              <div class="item-description">{{ $detail->description }}</div>
+            </li>
+          <!-- empty
+
+          endforelse   -->
+          @endforeach
+
+
+            <!-- <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Présentation du métier
               </div>
               <div class="item-description">{{ $formations->presentation_du_metier }}</div>
             </li>
+            
+
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
               Objectifs de la formation
@@ -84,7 +107,7 @@
             </li>
             <li class="rb-item" ng-repeat="itembx">
               <div class="title">
-              Equivalences
+              Équivalences
               </div>
               <div class="item-description">{{ $formations->equivalences }}</div>
             </li>
@@ -100,7 +123,7 @@
               </div>
               <div class="item-description">{{ $formations->date_debut }}</div>
               <div class="item-description">{{ $formations->date_fin }}</div>
-            </li>
+            </li> -->
             
           </ul>
             </div>
@@ -150,7 +173,7 @@
 
               <div class="info-text">
                 <h2>Durée</h2>
-                <h3>{{ $formations->duree }}</h3>
+                <h3>{{ $formations->duree }}&nbsp;heures</h3>
               </div>
             </li>
             <li>
@@ -182,7 +205,5 @@
 
   </div>
 </section>
-
-@endfor
 
 @endsection

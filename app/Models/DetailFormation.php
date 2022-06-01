@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class DetailFormation extends Model
 {
     use HasFactory;
 
-    public function blogs(){
-
-        $this->hasMany(Blog::class);
+    public function formation(){
+        $this->belongsTo(Formation::class);
     }
-    
 }

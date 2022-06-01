@@ -25,7 +25,7 @@ Route::get('/',[LayoutController::class, 'index'])->name('index');
 
 Route::get('/formation',[LayoutController::class, 'formation'])->name('formation');
 
-Route::get('/formation/detail',[LayoutController::class, 'formation_detail'])->name('formation_detail');
+Route::get('/formation/detail/{nom}',[LayoutController::class, 'formation_detail'])->name('formation_detail');
 
 Route::get('/blog',[LayoutController::class, 'blog'])->name('blog');
 
