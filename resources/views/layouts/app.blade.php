@@ -7,6 +7,7 @@
     <title>Virtual Conception</title>
     <link rel="stylesheet" href="../../css/app.css">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact.css">
 </head>
 <body>
 <x-navbar-component></x-navbar-component>
