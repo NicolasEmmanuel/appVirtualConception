@@ -27,13 +27,15 @@
   </section>
   
   <section>
-  <h1 id="fourth-h1">Or maybe it will frustrate me till the end of time</h1>
+  <h1 id="fourth-h1">Or maybe it will frustrate me till the end of time</h1> 
   </section>
   
   <section>
   <h1 id="fifth-h1">Even if that does happen, I'll still keep trying</h1>
   </section>
 
-  <script type="text/javascript" src="assets/background.js"></script>
+  <script type="text/javascript" src="/js/background.js"></script>
+
+  </div>
 
 @endsection
