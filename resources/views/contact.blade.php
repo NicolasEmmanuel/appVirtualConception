@@ -1,6 +1,12 @@
 @extends('layouts.app')
 @section('content')
 
+{{-- Début partie imfpa --}}
+<div class="presentation">
+  <h2>Présentation</h2>
+</div>
+{{-- Fin partie imfpa --}}
+
 
 <main class="min-h-screen bg-black text-white flex items-center justify-center" x-data="carouselFilter()">
     <div class="container grid grid-cols-1">
@@ -165,4 +171,7 @@
     </div>
   </main>
 
+{{-- Début partie imfpa --}}
+    <h2>test</h2>
+{{-- Fin partie imfpa --}}
   @endsection
