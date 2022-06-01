@@ -30,6 +30,8 @@ return array(
     'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
     'App\\Models\\Blog' => $baseDir . '/app/Models/Blog.php',
     'App\\Models\\Category' => $baseDir . '/app/Models/Category.php',
+    'App\\Models\\DetailDroiteFormation' => $baseDir . '/app/Models/DetailDroiteFormation.php',
+    'App\\Models\\DetailFormation' => $baseDir . '/app/Models/DetailFormation.php',
     'App\\Models\\Formation' => $baseDir . '/app/Models/Formation.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',

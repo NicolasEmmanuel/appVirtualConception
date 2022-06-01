@@ -2,8 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Blog;
+use App\Models\DetailFormation;
+use App\Models\DetailDroiteFormation;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Formation extends Model
 {
@@ -16,4 +19,9 @@ class Formation extends Model
     public function detail_formation(){
         return $this->hasMany(DetailFormation::class);
     }
+
+    public function detail_droite_formation(){
+        return $this->hasMany(DetailDroiteFormation::class);
+    }
+    
 }

@@ -540,6 +540,8 @@ class ComposerStaticInit89b3791a4cee3fef4e25ac9a5d6b33e1
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Models\\Blog' => __DIR__ . '/../..' . '/app/Models/Blog.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
+        'App\\Models\\DetailDroiteFormation' => __DIR__ . '/../..' . '/app/Models/DetailDroiteFormation.php',
+        'App\\Models\\DetailFormation' => __DIR__ . '/../..' . '/app/Models/DetailFormation.php',
         'App\\Models\\Formation' => __DIR__ . '/../..' . '/app/Models/Formation.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
