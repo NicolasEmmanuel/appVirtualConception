@@ -29,6 +29,7 @@ Route::get('/formation',[LayoutController::class, 'formation'])->name('formation
 Route::get('/formation/detail',[LayoutController::class, 'formation_detail'])->name('formation-detail');
 
 Route::get('/blog',[LayoutController::class, 'blog'])->name('blog');
+Route::get('/blog/{id}',[LayoutController::class, 'blog'])->name('blog-detail');
 
 /* Route formateur */
 Route::get('/formateur', [FormateursController::class, 'index'])->name('formateurs');
