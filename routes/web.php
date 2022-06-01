@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LayoutController;
+use App\Http\Controllers\FormateursController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,13 +26,13 @@ Route::get('/',[LayoutController::class, 'index'])->name('index');
 
 Route::get('/formation',[LayoutController::class, 'formation'])->name('formation');
 
-Route::get('/formation/detail',[LayoutController::class, 'formation_detail'])->name('formation_detail');
+Route::get('/formation/detail',[LayoutController::class, 'formation_detail'])->name('formation-detail');
 
 Route::get('/blog',[LayoutController::class, 'blog'])->name('blog');
 
 /* Route formateur */
-Route::get('/', [FormateursController::class, 'index'])->name('formateurs');
-Route::get('detail/{id}', [FormateursController::class, 'detail'])->name('detail');
+Route::get('/formateur', [FormateursController::class, 'index'])->name('formateurs');
+Route::get('/formateur/{id}', [FormateursController::class, 'detail'])->name('formateur-detail');
 
 
 Route::get('/dashboard', function () {
@@ -39,5 +40,14 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
+/* Zone admin */
+Route::get('/admin', function () {
+    return view('admin');
+})->middleware(['auth'])->name('admin');
 
+/* Include of roads Administration */
+require __DIR__.'/admin/blog.php';
+require __DIR__.'/admin/formateur.php';
+require __DIR__.'/admin/user.php';
+require __DIR__.'/admin/formation.php';
 require __DIR__.'/auth.php';
