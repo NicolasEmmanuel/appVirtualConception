@@ -8,14 +8,14 @@
 <div class="navbar">
 	
 	<div class="logo">
-		<h2>VirtualConception</h2>
+		<h2><a href="{{route('index')}}">VirtualConception</a></h2>
 	</div>
 	
 	
 	<ul class="links">
-		<li><a href="#">Accueil</a></li>
-		<li><a href="#">Formation</a></li>
-		<li><a href="#">Blog</a></li>
+		<li><a href="{{route('index')}}">Accueil</a></li>
+		<li><a href="{{route('formation')}}">Formation</a></li>
+		<li><a href="{{route('blog')}}">Blog</a></li>
 		<li><a href="#">Contact</a></li>
 	</ul>
 	

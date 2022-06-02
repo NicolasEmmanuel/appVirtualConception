@@ -44,6 +44,18 @@ ul {
 .navbar .logo {
   cursor: pointer;
   font-family: Lacquer;
+  
+}
+
+.navbar .logo h2 a:hover{
+
+  color: #004b5a;
+  
+} 
+
+.navbar .logo a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .navbar ul.links {
@@ -76,10 +88,7 @@ ul {
   color: #004b5a;
 }
 
-.logo h2:hover{
 
-  color: #004b5a;
-} 
 
 button {
   background: #ff8800;
@@ -110,10 +119,10 @@ button:hover {
   align-items: center;
   color: #fff;
 }*/
+
+
 .content img{
-
   width: 100%;
-
 }
 
 
@@ -132,6 +141,170 @@ button:hover {
 }
 
 
+
+
+
+@media screen and (max-width: 425px) {
+
+   
+  
+
+}
+
+/** Dynamic Background color **/
+/* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+
+  
+/* colours*/
+
+  /* section {
+    height: 100vh;
+  }  */
+
+ .section1 {
+  background-color: #D9F4FF;
+    /*ackground-color: #fd4600;*/
+  }
+  
+  .section2 {
+    background-color: #FFF2F2;
+  }
+  
+  .section3 {
+    background-color: #fe03fe;
+  }
+  
+  .section4 {
+    background-color: #fb0075;
+  }
+
+/** End Dynamic Background color **/
+
+/*** custom css **/
+
+.container{
+
+
+ /* background-color: #60fb00; */
+  display: flex;
+  position:relative;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding:20px 15px ;
+
+
+}
+
+.first .content{
+  padding: 100px;
+  border-radius: 20px ;
+  background-color: #fff !important;
+}
+
+.first h1 {
+
+  font-size: 2rem;
+  color: #005664;
+  text-align: center;
+}
+.first h2 {
+
+  font-size: 1.2rem;
+  color: #078194;
+  text-align: center;
+}
+
+
+.seconde{
+    
+  background-color: #D9F4FF !important;
+
+}
+.seconde  h1 {
+  padding-bottom: 15px;
+  font-size: 2rem;
+  color: #005664;
+  text-align: center;
+}
+
+.seconde .content{
+  padding: 50px;
+}
+
+/* SECTION BLOG */
+
+.blog  h1 {
+  padding-bottom: 15px;
+
+  font-size: 2rem;
+  color: #005664;
+  text-align: center;
+}
+
+/* FIN SECTION BLOG */
+
+/**** chip **/
+
+.chip{
+  margin: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #e5e5e5;
+  border: none;
+  cursor: default;
+  height: 36px;
+  outline: none;
+  padding: 0;
+  font-size: 14px;
+  color: #333333;
+  font-family:"Open Sans", sans-serif;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 16px;
+  vertical-align: middle;
+  text-decoration: none;
+  justify-content: center;
+}
+.chip-head{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #32C5D2;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  align-items: center;
+  user-select: none;
+  border-radius: 50%;
+  justify-content: center;
+  width: 36px;
+  color: #fff;
+  height: 36px;
+  font-size: 20px;
+  margin-right: -4px;
+}
+.chip-content{
+  cursor: inherit;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  user-select: none;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/**** End */
 
 @media screen and (max-width: 750px) {
   .navbar .right {
@@ -222,110 +395,26 @@ button:hover {
     position: fixed;
     z-index: 40;
   }
+
+  /* retrecissement landing page mobile */
+  .first{
+    height: 60vh;
+
+  }
+
+  .first .content{
+    padding: 40px 5px 0 5px !important;
+  }
+
+  .seconde .container .content{
+    padding:50px 0 50px 0 ;
+
+  }
+
+  /* fin retrecissement landing page mobile */
 }
 
 /***  fin nav bar  ***/
-
-/** Dynamic Background color **/
-/* panel styles */
-.panel {
-    /* min height incase content is higher than window height */
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: sans-serif;
-    /* outline: 10px solid hotpink; */
-    /* turn above on to see the edge of panels */
-  }
-
-  
-/* colours*/
-
-  section {
-    height: 100vh;
-  } 
-
- .section1 {
-  background-color: #D9F4FF;
-    /*ackground-color: #fd4600;*/
-  }
-  
-  .section2 {
-    background-color: #FFF2F2;
-  }
-  
-  .section3 {
-    background-color: #fe03fe;
-  }
-  
-  .section4 {
-    background-color: #fb0075;
-  }
-
-/** End Dynamic Background color **/
-
-/*** custom css **/
-
-.container{
-
-
- /* background-color: #60fb00; */
-  display: flex;
-  position:relative;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding:20px 15px ;
-
-
-}
-
-.first .content{
-  
-  padding: 100px;
-  border-radius: 20px ;
-
-  background-color: #fff !important;
-
-}
-
-.first h1 {
-
-  font-size: 2rem;
-  color: #005664;
-  text-align: center;
-}
-.first h2 {
-
-  font-size: 1.2rem;
-  color: #078194;
-  text-align: center;
-}
-
-
-.seconde{
-    
-  background-color: #D9F4FF !important;
-
-}
-.seconde  h1 {
-  padding-bottom: 15px;
-
-  font-size: 2rem;
-  color: #005664;
-  text-align: center;
-}
-
-.seconde .content{
-  
-  padding: 50px;
-
-
-
-
-}
-
 
 @media (min-width: 576px) {
   .container {
@@ -351,56 +440,3 @@ button:hover {
     max-width: 1140px;
   }
 }
-
-
-/**** chip **/
-
-.chip{
-  margin: 5px;
-  display: inline-flex;
-  flex-direction: row;
-  background-color: #e5e5e5;
-  border: none;
-  cursor: default;
-  height: 36px;
-  outline: none;
-  padding: 0;
-  font-size: 14px;
-  color: #333333;
-  font-family:"Open Sans", sans-serif;
-  white-space: nowrap;
-  align-items: center;
-  border-radius: 16px;
-  vertical-align: middle;
-  text-decoration: none;
-  justify-content: center;
-}
-.chip-head{
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  background-color: #32C5D2;
-  font-size: 1.25rem;
-  flex-shrink: 0;
-  align-items: center;
-  user-select: none;
-  border-radius: 50%;
-  justify-content: center;
-  width: 36px;
-  color: #fff;
-  height: 36px;
-  font-size: 20px;
-  margin-right: -4px;
-}
-.chip-content{
-  cursor: inherit;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  user-select: none;
-  white-space: nowrap;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-/**** End */

@@ -22,31 +22,39 @@
       <div class="content">
       
         <h1 >Nos Formations</h1>
+          <div>
+            <div class="chip">
+              <div class="chip-head">C</div>
+              <div class="chip-content">Concepteur Developpeur d'Application</div>
+            </div>
+            <div class="chip">
+              <div class="chip-head">D</div>
+              <div class="chip-content">Developpeur Web Web Mobile</div>
+            </div>
+            <div class="chip">
+              <div class="chip-head">C</div>
+              <div class="chip-content">Concepteur Developpeur d'Application</div>
+            </div>
+            <div class="chip">
+              <div class="chip-head">C</div>
+              <div class="chip-content">Concepteur Developpeur d'Application</div>
+            </div>
+          </div>
        
-        <div class="chip">
-          <div class="chip-head">C</div>
-          <div class="chip-content">Concepteur Developpeur d'Application</div>
-        </div>
-        <div class="chip">
-          <div class="chip-head">D</div>
-          <div class="chip-content">Developpeur Web Web Mobile</div>
-        </div>
-        <div class="chip">
-          <div class="chip-head">C</div>
-          <div class="chip-content">Concepteur Developpeur d'Application</div>
-        </div>
-        <div class="chip">
-          <div class="chip-head">C</div>
-          <div class="chip-content">Concepteur Developpeur d'Application</div>
-        </div>
+        
 
       </div>
   </div>
 
   </section>
   
-  <section>
-  <h1 id="third-h1">I think it will honestly</h1>
+  <section class="blog">
+  
+    <div class="container">
+      <div class="content">
+        <h1>Les stagiaires nous racontent leurs aventures</h1>
+      </div>
+    </div>
   </section>
   
   <section>
