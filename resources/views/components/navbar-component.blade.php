@@ -1,3 +1,10 @@
+
+<!--Main Navigation-->
+
+<header>
+
+
+
 <div class="navbar">
 	
 	<div class="logo">
@@ -27,3 +34,7 @@
 	
 	
 </div>
+
+</header>
+
+<!--Main Navigation-->

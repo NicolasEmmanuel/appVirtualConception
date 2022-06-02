@@ -11,6 +11,14 @@
 </head>
 <body>
     <x-navbar-component></x-navbar-component>
-    @yield('content')
+
+    <!--Main layout-->
+
+    <main>
+        @yield('content')
+    </main>
+
+    <!--Main layout-->
+  
 </body>
 </html>
