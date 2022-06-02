@@ -1,11 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-=======
 use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\FormateursController;
->>>>>>> origin/team2
 
 /*
 |--------------------------------------------------------------------------
@@ -22,16 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
-=======
-*/
 
-// route default
+
+// route de base
 Route::get('/',[LayoutController::class, 'index'])->name('index');
 
 Route::get('/formation',[LayoutController::class, 'formation'])->name('formation');
 
-Route::get('/formation/detail',[LayoutController::class, 'formation_detail'])->name('formation-detail');
+Route::get('/formation/detail/{nom}',[LayoutController::class, 'formation_detail'])->name('formation_detail');
 
 Route::get('/blog',[LayoutController::class, 'blog'])->name('blog');
 
@@ -45,13 +40,10 @@ Route::get('/connexion',[LayoutController::class, 'connexion'])->name('connexion
 
 
 
->>>>>>> origin/team2
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-<<<<<<< HEAD
-=======
 
 /* Zone admin */
 Route::get('/admin', function () {
@@ -63,5 +55,4 @@ require __DIR__.'/admin/blog.php';
 require __DIR__.'/admin/formateur.php';
 require __DIR__.'/admin/user.php';
 require __DIR__.'/admin/formation.php';
->>>>>>> origin/team2
 require __DIR__.'/auth.php';

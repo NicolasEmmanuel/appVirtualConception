@@ -37,7 +37,7 @@
           <ul class="rb">
 
           @foreach ($formations->detail_formation as $detail)
-              @if (! is_null($detail->detail))
+            @if (! is_null($detail->detail))
               <li class="rb-item" ng-repeat="itembx">
                 <div class="title">
                 {{ $detail->titre }}
