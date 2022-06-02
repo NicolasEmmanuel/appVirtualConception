@@ -1,29 +1,29 @@
-<nav class="navbar">
-    <div class="containerNav">
-  
-      <div class="navbar-header">
-        <button class="navbar-toggler" data-toggle="open-navbar1">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <a href="#">
-          <h4>Virtual<span>Conception</span></h4>
-        </a>
-      </div>
-  
-      <div class="navbar-menu" id="open-navbar1">
-        <ul class="navbar-nav">
+<div class="navbar">
+	
+	<div class="logo">
+		<h2>VirtualConception</h2>
+	</div>
+	
+	
+	<ul class="links">
+		<li><a href="#">Accueil</a></li>
+		<li><a href="#">Formation</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	
+	
 
-          <li ><a href="{{route('index')}}">Accueil</a></li>
-          <li ><a href="#">Teams</a></li>
-          <li ><a href="#">Formateurs</a></li>
-          <li ><a href="{{route('formation')}}">Formation</a></li>
-          <li><a href="{{route('blog')}}">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Signin</a></li>
 
-        </ul>
-      </div>
-    </div>
-</nav>
+	<div class="right">
+		<button>Connexion</button>
+	</div>
+	
+	<div class="toggle">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+	
+	
+</div>
