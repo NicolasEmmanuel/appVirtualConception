@@ -24,7 +24,6 @@
   </div>
 </section>
 
-
 <!-- RUBRIQUES DES FORMATIONS -->
 <section class="programme" >
   <div class="container">
@@ -38,13 +37,13 @@
           <ul class="rb">
 
           @foreach ($formations->detail_formation as $detail)
-              @if (! is_null($detail->description))
+              @if (! is_null($detail->detail))
               <li class="rb-item" ng-repeat="itembx">
                 <div class="title">
                 {{ $detail->titre }}
                 </div>
             
-                <div class="item-description">{{ $detail->description }}</div>
+                <div class="item-description">{{ $detail->detail }}</div>
               </li>              
             @else
 
@@ -55,7 +54,6 @@
             </div>
       </div>
       
-
 <!-- INFORMATIONS SUR LA DROITE -->
       <div class="right">
 
