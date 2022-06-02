@@ -5,8 +5,13 @@
 <main class="min-h-screen bg-black text-white flex items-center justify-center" x-data="carouselFilter()">
     <div class="container grid grid-cols-1">
       <div class="flex py-12 justify-center">
-        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-800': active != 0 }" href="#" @click.prevent="changeActive(0)">Fruit</a>
-        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-700': active != 1 }" href="#" @click.prevent="changeActive(1)">People</a>
+        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-800': active != 0 }" href="#" @click.prevent="changeActive(0)">CSS</a>
+        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-700': active != 1 }" href="#" @click.prevent="changeActive(1)">BLOG</a>
+        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-700': active != 2 }" href="#" @click.prevent="changeActive(2)">FORMATIONS</a>
+        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-700': active != 3 }" href="#" @click.prevent="changeActive(3)">FORMATEURS</a>
+        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-700': active != 4 }" href="#" @click.prevent="changeActive(4)">TEAMS</a>
+        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-700': active != 5 }" href="#" @click.prevent="changeActive(5)">CONTACT</a>
+        <a class="px-2 text-lg uppercase font-bold tracking-widest hover:text-white" :class="{ 'text-gray-700': active != 6 }" href="#" @click.prevent="changeActive(6)">SEO</a>
       </div>
       
       <div class="row-start-2 col-start-1"
