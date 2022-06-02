@@ -30,4 +30,9 @@ class LayoutController extends Controller
 
         return view('blog');
     }
+
+    public function connexion() {
+
+        return view('welcome');
+    }
 }
