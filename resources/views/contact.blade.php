@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
-{{-- Début partie imfpa --}}
+{{-- Début partie présentation--}}
 <div class="presentation">
   <h2>Présentation</h2>
 </div>
-{{-- Fin partie imfpa --}}
+{{-- Fin partie présentation --}}
 
 
 
