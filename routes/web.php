@@ -35,6 +35,11 @@ Route::get('/formateur', [FormateursController::class, 'index'])->name('formateu
 Route::get('/formateur/{id}', [FormateursController::class, 'detail'])->name('formateur-detail');
 
 
+/* Route connexion */
+Route::get('/connexion',[LayoutController::class, 'connexion'])->name('connexion');
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
