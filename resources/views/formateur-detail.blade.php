@@ -16,7 +16,7 @@
           <p class="mt-2 text-lg font-semibold text-gray-600">{{$detailFormateur->role}}</p>
           <p class="mt-1 text-gray-500 font-">{{$detailFormateur->presentation}}</p>
       </div>
-      <a href="/" class="px-2 py-2 bg-blue-500 text-white rounded-full">retour</a>
+      <a href="/formateur" class="px-2 py-2 bg-blue-500 text-white rounded-full">retour</a>
   </div>
 
 </div>
