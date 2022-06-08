@@ -12,6 +12,7 @@ const mix = require('laravel-mix');
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'public/css', [
 =======
 mix.js('resources/js/app.js', 'public/js')
@@ -21,6 +22,14 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/admin.css', 'public/css')
     .postCss('resources/css/app.css', 'public/css', [
 >>>>>>> origin/team2
+=======
+mix.js('resources/js/app.js', 'public/js')
+        .js('resources/js/background.js', 'public/js')
+        .js('resources/js/landing.js', 'public/js')
+        .postCss('resources/css/style.css', 'public/css')
+        .postCss('resources/css/landing.css', 'public/css')
+        .postCss('resources/css/app.css', 'public/css', [
+>>>>>>> origin/gullianoCss
     require('tailwindcss'),
     require('autoprefixer'),
 ]);

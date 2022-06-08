@@ -10,7 +10,15 @@
   
 </head>
 <body>
-<x-navbar-component></x-navbar-component>
-    @yield('content')
+    <x-navbar-component></x-navbar-component>
+
+    <!--Main layout-->
+
+    <main>
+        @yield('content')
+    </main>
+
+    <!--Main layout-->
+  
 </body>
 </html>
