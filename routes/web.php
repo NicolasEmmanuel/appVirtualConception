@@ -15,9 +15,9 @@ use App\Http\Controllers\FormateursController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 
